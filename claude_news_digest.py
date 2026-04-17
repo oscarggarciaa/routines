@@ -190,7 +190,6 @@ def run_digest():
         build_prompt(),
         "--allowedTools", "WebSearch,mcp__Gmail__create_draft",
         "--mcp-config", mcp_config,
-        "--dangerously-skip-permissions",
     ]
 
     result = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
